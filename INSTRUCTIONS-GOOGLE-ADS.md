@@ -563,10 +563,22 @@ RSA Ad :
 - **Deploiement** : Cloudflare Pages (kenrak.com)
 - **Dernier push** : 10 mars 2026
 
+## Infrastructure Cloudflare ✅
+- **Zone** : kenrak.com (ID: 313c4845102cd134f4ce9d2a460431ab)
+- **Compte** : Formation@businessdigital.fr 1 (ID: e5049a5478133d35f41a8bb36ae19974)
+- **Pages project** : kenrak → kenrak.pages.dev
+- **Domaines custom** : kenrak.com + www.kenrak.com (via domain-proxy worker)
+- **Worker** : domain-proxy (route kenrak.com/* et www.kenrak.com/* → kenrak.pages.dev)
+- **DNS** : A records proxied via Cloudflare → domain-proxy worker → kenrak.pages.dev
+- **SSL** : Certificat Google (via Pages custom domain, status pending/auto)
+- **Nameservers** : brad.ns.cloudflare.com, maeve.ns.cloudflare.com
+
 ## Resume des taches automatisees completees ✅
 | Tache | Statut |
 |-------|--------|
 | Site kenrak.com deploye sur Cloudflare Pages | ✅ |
+| Domaine kenrak.com connecte au projet Pages (via worker) | ✅ |
+| domain-proxy worker mis a jour (kenrak.com → kenrak.pages.dev) | ✅ |
 | C1 publiee (ID 23643023932, $120/jour) | ✅ |
 | C2 publiee (ID 23638468049, $80/jour) | ✅ |
 | CSVs SOP C1-C5 generes | ✅ |
