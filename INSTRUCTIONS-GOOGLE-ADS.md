@@ -14,12 +14,24 @@
 | C4 - DSA Dynamic Search | - | $49/jour | CSV pret (google-ads-import-C3-C4-C5-SOP.csv) |
 | C5 - Vibe Business Fund | - | $49/jour | CSV pret (google-ads-import-C3-C4-C5-SOP.csv) |
 
-## Fichiers CSV d'import
+## Fichiers du projet
+### CSVs Google Ads
 - **`google-ads-import-C1-C2-SOP.csv`** : Mise a jour SOP pour C1, C2 deja publiees (132 lignes, 120 keywords, 12 ads, 0 warnings)
 - **`google-ads-import-C3-C4-C5-SOP.csv`** : Campagnes 3, 4, 5 avec toutes les regles SOP appliquees (123 lignes, 0 warnings)
 - **`google-ads-extensions.csv`** : Extensions pour toutes les campagnes (sitelinks, callouts, snippets, call)
 - **`generate-csv.py`** : Script Python pour regenerer le CSV C3-C5
 - **`generate-csv-C1-C2-SOP.py`** : Script Python pour regenerer le CSV C1-C2
+
+### Contenu SEO et Marketing
+- **`seo-content/reddit-posts.md`** : 5 posts Reddit pour r/france, r/startups, r/artificial, r/smallbusiness
+- **`seo-content/linkedin-posts.md`** : 5 posts LinkedIn (credits tech, OPCO, alternance, Vibe Business, agents IA)
+- **`seo-content/x-twitter-posts.md`** : 2 threads + 7 tweets individuels pour X/Twitter
+- **`seo-content/blog-articles.md`** : 5 structures d'articles SEO (credits tech, aides Etat, OPCO, alternance, Vibe Business)
+- **`seo-content/emailing-workflow.md`** : Workflow emailing complet (3 segments, 8 templates, outils recommandes)
+
+### Scripts et Outils
+- **`google-apps-script-update-sheet.js`** : Google Apps Script pour mettre a jour le Google Sheet automatiquement
+- **`gtm-conversion-tag.json`** : Configuration complete des tags GTM
 
 ## REGLES SOP OBLIGATOIRES (a appliquer a TOUTES les campagnes)
 
@@ -479,3 +491,59 @@ RSA Ad :
 > Note : Le budget total depasse legerement le Ad Grant de $10K/mois.
 > Google ajustera automatiquement les depenses reelles au plafond du grant.
 > Prioriser C1 et C2 si necessaire (budgets les plus eleves).
+
+---
+
+## ACTIONS MANUELLES REQUISES (par ordre de priorite)
+
+### 1. Importer C3-C5 dans Google Ads Editor (HAUTE)
+1. Ouvrir Google Ads Editor
+2. Telecharger les donnees recentes du compte 995-517-3698
+3. Menu : Compte > Importer > Coller le texte
+4. Copier le contenu de `google-ads-import-C3-C4-C5-SOP.csv`
+5. Coller et verifier le mapping des colonnes
+6. Publier les modifications
+
+### 2. Appliquer SOP a C1 et C2 (HAUTE)
+1. Dans Google Ads Editor : Compte > Importer > Coller le texte
+2. Copier le contenu de `google-ads-import-C1-C2-SOP.csv`
+3. Coller et resoudre les conflits (ajouter les nouveaux keywords et ads)
+4. **IMPORTANT** : Mettre en pause les anciennes annonces RSA (celles sans DKI/Location)
+5. Publier les modifications
+
+### 3. Importer les extensions (HAUTE)
+1. Dans Google Ads Editor : utiliser `google-ads-extensions.csv`
+2. Appliquer les sitelinks, callouts, snippets et call a TOUTES les campagnes
+3. Publier
+
+### 4. Configurer GTM Conversions (HAUTE)
+1. Ouvrir GTM (GTM-PD6BHBZD) : https://tagmanager.google.com
+2. Creer les tags de conversion Google Ads (voir gtm-conversion-tag.json)
+3. Configurer les triggers : clics sections, scroll 50%+, temps > 60s
+4. Publier le container GTM
+
+### 5. Mettre a jour le Google Sheet (MOYENNE)
+1. Ouvrir le Google Sheet : https://docs.google.com/spreadsheets/d/1qP0CT3Xs-UxRfLjm4Oy6KROQarJbK7XtSKgVN449Axo/edit
+2. Menu : Extensions > Apps Script
+3. Coller le contenu de `google-apps-script-update-sheet.js`
+4. Executer `updateKenrakSheet()`
+5. Autoriser l'acces quand demande
+
+### 6. Publier contenu SEO (MOYENNE)
+1. Publier les posts Reddit (voir `seo-content/reddit-posts.md`)
+2. Publier les posts LinkedIn (voir `seo-content/linkedin-posts.md`)
+3. Publier les tweets/threads X (voir `seo-content/x-twitter-posts.md`)
+4. Creer les articles de blog (voir `seo-content/blog-articles.md`)
+
+### 7. Lancer les sequences emailing (BASSE)
+1. Choisir un outil : Brevo, HubSpot, ou Make.com
+2. Configurer les 3 segments (Entreprises, Alternance, Startups)
+3. Importer les templates (voir `seo-content/emailing-workflow.md`)
+4. Lancer les sequences
+
+---
+
+## GitHub Repository
+- **URL** : https://github.com/franckparienti/kenrak.com
+- **Branche** : main
+- **Deploiement** : Cloudflare Pages (kenrak.com)
