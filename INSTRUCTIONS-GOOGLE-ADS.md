@@ -1,9 +1,60 @@
 # GUIDE COMPLET - Import Campagnes Google Ads pour kenrak.com
 
+## Compte Google Ads
+- **Compte** : kenrak.com (995-517-3698, aurelien@kenrak.com)
+- **Type** : Google Ad Grant ($10K/mois)
+- **GTM** : GTM-PD6BHBZD
+
+## Statut des Campagnes
+| Campagne | ID | Budget | Statut |
+|----------|-----|--------|--------|
+| C1 - Formation IA Entreprise OPCO | 23643023932 | $120/jour | PUBLIEE ✅ (SOP a appliquer) |
+| C2 - Alternance IA Formation Jeunes | 23638468049 | $80/jour | PUBLIEE ✅ (SOP a appliquer) |
+| C3 - Credits Tech Startup | - | $80/jour | CSV pret (google-ads-import-C3-C4-C5-SOP.csv) |
+| C4 - DSA Dynamic Search | - | $49/jour | CSV pret (google-ads-import-C3-C4-C5-SOP.csv) |
+| C5 - Vibe Business Fund | - | $49/jour | CSV pret (google-ads-import-C3-C4-C5-SOP.csv) |
+
+## Fichiers CSV d'import
+- **`google-ads-import-C3-C4-C5-SOP.csv`** : Campagnes 3, 4, 5 avec toutes les regles SOP appliquees (123 lignes, 0 warnings)
+- **`google-ads-extensions.csv`** : Extensions pour toutes les campagnes (sitelinks, callouts, snippets, call)
+- **`generate-csv.py`** : Script Python pour regenerer le CSV si modifications necessaires
+
+## REGLES SOP OBLIGATOIRES (a appliquer a TOUTES les campagnes)
+
+### Headlines RSA avec DKI et Location Insertion
+- **H1** : `{KeyWord:Texte par defaut}` — Dynamic Keyword Insertion, **pinne en position 1**
+- **H2** : `{LOCATION(City):en France}` — Insertion ville, **pinne en position 2**
+- **H3** : `{LOCATION(State):France}` — Insertion region, **pinne en position 3**
+- H4 a H15 : Headlines specifiques (non pinnes)
+
+### Keywords : 3 types de correspondance obligatoires
+Pour CHAQUE mot-cle, creer 3 versions :
+- **Broad Match** : `mot cle` (sans symbole)
+- **Phrase Match** : `"mot cle"` (guillemets)
+- **Exact Match** : `[mot cle]` (crochets)
+
+### Annonces RSA
+- **3 annonces RSA par Ad Group** (minimum)
+- Chaque annonce a 15 headlines + 4 descriptions
+- H1/H2/H3 identiques (DKI + Location), H4-H15 varies entre les 3 annonces
+
+### Extensions
+- **Call Extension** : +33756812787 sur toutes les campagnes
+- **Sitelinks** : 6 sitelinks (voir google-ads-extensions.csv)
+- **Callouts** : 8 callouts (voir google-ads-extensions.csv)
+- **Structured Snippets** : 3 snippets (Types, Certifications, Programmes)
+
+### Naming Conventions
+- Campagnes RSA : "C# - Nom Campagne" (ex: "C3 - Credits Tech Startup")
+- Campagne DSA : "C4 - DSA Francais kenrak.com"
+- Ad Groups : URL complete (ex: "kenrak.com/#credits", "kenrak.com/#aides")
+
+---
+
 ## ETAPE 1 : Ouvrir Google Ads Editor
 1. Telecharger Google Ads Editor : https://ads.google.com/intl/fr/home/tools/ads-editor/
 2. Ouvrir Google Ads Editor
-3. Selectionner le compte **kenrak.com** (Ad Grant)
+3. Selectionner le compte **kenrak.com** (Ad Grant - 995-517-3698)
 4. Cliquer "Telecharger les donnees recentes"
 
 ## ETAPE 2 : Configurer la strategie d'encheres
@@ -11,6 +62,24 @@
 - Aller dans Compte > Parametres
 - Strategie d'encheres : **Maximiser les conversions**
 - Cela permet de depasser le cap $2 CPC du Ad Grant
+
+## ETAPE 2bis : Importer les campagnes 3-5 via CSV
+1. Dans Google Ads Editor : **Compte > Importer > Coller le texte**
+2. Ouvrir `google-ads-import-C3-C4-C5-SOP.csv` et copier le contenu
+3. Coller dans la fenetre d'import
+4. Verifier que toutes les colonnes sont mappees correctement
+5. Resoudre les conflits eventuels
+6. **Publier les modifications**
+
+## ETAPE 2ter : Appliquer les regles SOP aux campagnes 1 et 2
+Les campagnes C1 et C2 sont deja publiees mais sans les regles SOP. Il faut :
+1. Ouvrir chaque Ad Group de C1 et C2
+2. **Ajouter les keywords Broad et Exact** (actuellement seulement Phrase match)
+3. **Modifier chaque annonce RSA** :
+   - Remplacer H1 par `{KeyWord:Texte par defaut}` (pinne pos 1)
+   - Remplacer H2 par `{LOCATION(City):en France}` (pinne pos 2)
+   - Remplacer H3 par `{LOCATION(State):France}` (pinne pos 3)
+4. **Creer 2 annonces RSA supplementaires** par Ad Group (il y en a 1 actuellement, il en faut 3)
 
 ## ETAPE 3 : Creer les campagnes manuellement dans Google Ads Editor
 
@@ -333,14 +402,15 @@ RSA Ad :
 ---
 
 ## ETAPE 4 : Extensions d'annonces (a ajouter a TOUTES les campagnes)
+**Fichier CSV d'import : `google-ads-extensions.csv`**
 
 ### Sitelinks (6) :
-1. Titre: Credits Tech Gratuits | Desc: Accedez a +5M€ de credits tech | URL: https://kenrak.com/#credits
-2. Titre: Aides Etat IA | Desc: CIR, BPI, France 2030, OPCO | URL: https://kenrak.com/#aides
-3. Titre: Formation Entreprise OPCO | Desc: 100% finance par votre OPCO | URL: https://kenrak.com/#entreprise
-4. Titre: Alternance IA | Desc: BTS des 492€/mois en CFA | URL: https://kenrak.com/#alternance
-5. Titre: Vibe Business Fund | Desc: Startup Studio IA France | URL: https://kenrak.com/#fund
-6. Titre: Simulateur Aides | Desc: Calculez vos aides en 1 min | URL: https://kenrak.com/#simulateur
+1. Titre: Credits Tech Gratuits | Desc1: +5ME de credits tech | Desc2: Google AWS Azure Cloudflare | URL: https://kenrak.com/#credits
+2. Titre: Aides Etat IA | Desc1: CIR BPI France 2030 | Desc2: Jusqu'a 250KE d'aides | URL: https://kenrak.com/#aides
+3. Titre: Formation Entreprise OPCO | Desc1: 100% financee OPCO | Desc2: Centre certifie Qualiopi | URL: https://kenrak.com/#entreprise
+4. Titre: Alternance IA | Desc1: BTS des 492E/mois | Desc2: Formation CFA gratuite | URL: https://kenrak.com/#alternance
+5. Titre: Vibe Business Fund | Desc1: Startup Studio IA | Desc2: Lancez votre business | URL: https://kenrak.com/#fund
+6. Titre: Simulateur Aides | Desc1: Calculez vos aides IA | Desc2: Eligibilite en 2 minutes | URL: https://kenrak.com/#simulateur
 
 ### Callout Extensions (8) :
 - Centre Certifie Qualiopi
@@ -352,9 +422,13 @@ RSA Ad :
 - +5M€ Credits Tech
 - Partenaire BPI France
 
-### Structured Snippets :
+### Structured Snippets (3) :
 - En-tete: Types | Valeurs: Formation IA, Alternance IA, Credits Cloud, Aides Etat, Startup Studio, Agents IA
 - En-tete: Certifications | Valeurs: Qualiopi, CFA Agree, Partenaire BPI, France 2030, OPCO
+- En-tete: Programmes | Valeurs: Google Cloud 350KE, AWS 300KE, Azure 150KE, Cloudflare 250KE, Stripe 50KE
+
+### Call Extension :
+- Numero : +33756812787
 
 ---
 
@@ -386,4 +460,20 @@ RSA Ad :
 4. Ajuster les encheres si necessaire
 
 ## ETAPE 7 : Conversion Tracking (GTM)
-Voir le fichier gtm-conversion-tag.json pour la configuration complete.
+- **GTM Container** : GTM-PD6BHBZD
+- Voir le fichier gtm-conversion-tag.json pour la configuration complete
+- Conversions a tracker : clics sur sections (#credits, #aides, #entreprise, #alternance, #fund), scroll 50%+, temps sur page > 60s
+
+## Recapitulatif Budget Total
+| Campagne | Budget/jour | Budget/mois |
+|----------|------------|-------------|
+| C1 - Formation IA Entreprise OPCO | $120 | $3,600 |
+| C2 - Alternance IA Formation Jeunes | $80 | $2,400 |
+| C3 - Credits Tech Startup | $80 | $2,400 |
+| C4 - DSA Dynamic Search | $49 | $1,470 |
+| C5 - Vibe Business Fund | $49 | $1,470 |
+| **TOTAL** | **$378** | **$11,340** |
+
+> Note : Le budget total depasse legerement le Ad Grant de $10K/mois.
+> Google ajustera automatiquement les depenses reelles au plafond du grant.
+> Prioriser C1 et C2 si necessaire (budgets les plus eleves).
