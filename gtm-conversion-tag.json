@@ -1,0 +1,137 @@
+{
+  "exportFormatVersion": 2,
+  "containerVersion": {
+    "tag": "kenrak-conversion-tracking",
+    "container": {
+      "publicId": "GTM-PD6BHBZD",
+      "name": "kenrak.com"
+    },
+    "tags": [
+      {
+        "name": "GA4 - Config - kenrak.com",
+        "type": "googtag",
+        "parameter": [
+          {
+            "key": "tagId",
+            "value": "G-XXXXXXXXXX"
+          }
+        ],
+        "firingTriggerId": ["2147483647"],
+        "notes": "IMPORTANT: Remplacer G-XXXXXXXXXX par votre vrai Measurement ID GA4"
+      },
+      {
+        "name": "GA4 Event - Lead Form Submit",
+        "type": "gaawe",
+        "parameter": [
+          {
+            "key": "eventName",
+            "value": "generate_lead"
+          },
+          {
+            "key": "measurementId",
+            "value": "G-XXXXXXXXXX"
+          },
+          {
+            "key": "eventParameters",
+            "list": [
+              {
+                "map": [
+                  {"key": "name", "value": "form_type"},
+                  {"key": "value", "value": "{{DLV - formType}}"}
+                ]
+              },
+              {
+                "map": [
+                  {"key": "name", "value": "user_email"},
+                  {"key": "value", "value": "{{DLV - formEmail}}"}
+                ]
+              }
+            ]
+          }
+        ],
+        "firingTriggerId": ["lead_form_trigger"],
+        "notes": "Se declenche quand le formulaire de lead est soumis"
+      },
+      {
+        "name": "Google Ads Conversion - Lead",
+        "type": "awct",
+        "parameter": [
+          {
+            "key": "conversionId",
+            "value": "AW-XXXXXXXXX"
+          },
+          {
+            "key": "conversionLabel",
+            "value": "XXXXXXXXXXX"
+          }
+        ],
+        "firingTriggerId": ["lead_form_trigger"],
+        "notes": "IMPORTANT: Remplacer AW-XXXXXXXXX par votre conversion ID Google Ads"
+      }
+    ],
+    "triggers": [
+      {
+        "name": "Lead Form Submit",
+        "triggerId": "lead_form_trigger",
+        "type": "customEvent",
+        "customEventFilter": [
+          {
+            "parameter": [
+              {"key": "arg0", "value": "{{_event}}"},
+              {"key": "arg1", "value": "lead_form_submit"}
+            ],
+            "type": "equals"
+          }
+        ],
+        "notes": "Se declenche sur l'evenement dataLayer 'lead_form_submit' pousse par le formulaire du site"
+      }
+    ],
+    "variables": [
+      {
+        "name": "DLV - formType",
+        "type": "v",
+        "parameter": [
+          {"key": "name", "value": "formType"},
+          {"key": "dataLayerVersion", "value": "2"}
+        ]
+      },
+      {
+        "name": "DLV - formEmail",
+        "type": "v",
+        "parameter": [
+          {"key": "name", "value": "formEmail"},
+          {"key": "dataLayerVersion", "value": "2"}
+        ]
+      }
+    ]
+  },
+  "instructions": {
+    "setup_steps": [
+      "1. Ouvrir Google Tag Manager > GTM-PD6BHBZD",
+      "2. Creer une propriete GA4 dans Google Analytics si pas deja fait",
+      "3. Remplacer G-XXXXXXXXXX par le vrai Measurement ID GA4",
+      "4. Dans Google Ads, creer une conversion 'Lead' et recuperer le Conversion ID (AW-XXXXXXXXX) et Label",
+      "5. Remplacer les valeurs dans le tag 'Google Ads Conversion - Lead'",
+      "6. Creer les 3 tags, 1 trigger, et 2 variables comme decrit ci-dessus",
+      "7. Publier le container GTM",
+      "8. Tester avec GTM Preview mode"
+    ],
+    "dataLayer_event_format": {
+      "event": "lead_form_submit",
+      "formType": "entreprise|candidat|porteur",
+      "formEmail": "user@example.com",
+      "formName": "Jean Dupont",
+      "formPhone": "0612345678"
+    },
+    "google_ads_conversion_setup": [
+      "1. Google Ads > Outils > Conversions > + Nouvelle conversion",
+      "2. Type: Site web",
+      "3. Nom: Lead kenrak.com",
+      "4. Categorie: Lead/Inscription",
+      "5. Valeur: Pas de valeur (ou 50€ estimee)",
+      "6. Comptage: Une conversion par clic",
+      "7. Fenetre de conversion: 30 jours",
+      "8. Copier le Conversion ID et Label dans GTM"
+    ]
+  }
+}

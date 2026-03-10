@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kenrak - Vibe Business France | Lance ton business IA sans avancer 1 euro</title>
+    <meta name="description" content="Plus de 5M euros de credits tech gratuits + aides Etat (BPI, CIR, CII, OPCO). Formation IA financee a 100%. Alternance ou entreprise. 0 euro a avancer.">
+    <meta name="keywords" content="vibe business, formation IA, OPCO, alternance IA, credits startup, aides etat, BPI France, CIR, CII, Google Ad Grant">
+    <link rel="canonical" href="https://kenrak.com/">
+    <meta property="og:title" content="Kenrak - Vibe Business France">
+    <meta property="og:description" content="Lance ton business IA en France sans avancer 1 euro. Credits tech + aides Etat + formation financee.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://kenrak.com">
+
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PD6BHBZD');</script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                fontFamily: { sans: ['Inter', 'sans-serif'] },
+                colors: {
+                    brand: { 50:'#f0fdf4', 100:'#dcfce7', 500:'#22c55e', 600:'#16a34a', 700:'#15803d', 800:'#166534', 900:'#14532d' },
+                    dark: { 50:'#f8fafc', 100:'#f1f5f9', 800:'#1e293b', 900:'#0f172a', 950:'#020617' }
+                }
+            }
+        }
+    }
+    </script>
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-green { background: linear-gradient(135deg, #22c55e 0%, #16a34a 50%, #15803d 100%); }
+        .gradient-text-green { background: linear-gradient(135deg, #22c55e, #4ade80); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .gradient-text-blue { background: linear-gradient(135deg, #3b82f6, #8b5cf6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .glass { background: rgba(255,255,255,0.03); backdrop-filter: blur(20px); border: 1px solid rgba(255,255,255,0.08); }
+        .card-hover { transition: all 0.3s ease; }
+        .card-hover:hover { transform: translateY(-4px); box-shadow: 0 20px 40px rgba(0,0,0,0.3); }
+        .animate-float { animation: float 6s ease-in-out infinite; }
+        @keyframes float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-10px)} }
+        .counter { font-variant-numeric: tabular-nums; }
+        .bg-grid { background-image: radial-gradient(rgba(255,255,255,0.05) 1px, transparent 1px); background-size: 40px 40px; }
+    </style>
+</head>
+<body class="bg-dark-950 text-white antialiased">
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PD6BHBZD" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+    <!-- NAV -->
+    <nav class="fixed w-full z-50 glass border-b border-white/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <a href="#" class="font-black text-xl tracking-tight">ken<span class="text-green-400">rak</span></a>
+                <div class="hidden md:flex items-center gap-8 text-sm text-gray-400">
+                    <a href="#credits" class="hover:text-white transition">Credits</a>
+                    <a href="#aides" class="hover:text-white transition">Aides Etat</a>
+                    <a href="#entreprise" class="hover:text-white transition">Entreprises</a>
+                    <a href="#alternance" class="hover:text-white transition">Alternance</a>
+                    <a href="#fund" class="hover:text-white transition">Vibe Fund</a>
+                </div>
+                <a href="#inscription" class="gradient-green text-white px-5 py-2 rounded-full text-sm font-semibold hover:opacity-90 transition">
+                    Obtenir mes credits <i class="fas fa-arrow-right ml-1"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="relative min-h-screen flex items-center bg-grid overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-b from-green-900/20 via-transparent to-transparent"></div>
+        <div class="absolute top-20 right-10 w-96 h-96 bg-green-500/10 rounded-full blur-3xl animate-float"></div>
+        <div class="absolute bottom-20 left-10 w-72 h-72 bg-blue-500/10 rounded-full blur-3xl"></div>
+
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-20">
+            <div class="text-center max-w-4xl mx-auto">
+                <div class="inline-flex items-center gap-2 bg-green-500/10 border border-green-500/20 rounded-full px-4 py-1.5 text-green-400 text-sm mb-8">
+                    <span class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
+                    Vibe Business France — 100% finance par l'Etat
+                </div>
+
+                <h1 class="text-5xl md:text-7xl font-black leading-tight mb-6">
+                    Lance ton business IA<br>
+                    <span class="gradient-text-green">sans avancer 1&euro;</span>
+                </h1>
+
+                <p class="text-xl text-gray-400 max-w-2xl mx-auto mb-4">
+                    +5M&euro; de credits tech gratuits. Formation IA financee a 100% par ton OPCO.
+                    Aides Etat jusqu'a 250 000&euro;. On s'occupe de tout.
+                </p>
+                <p class="text-sm text-gray-500 mb-10">Centre de formation certifie Qualiopi &bull; CFA agreee &bull; Partenaire BPI France</p>
+
+                <div class="flex flex-col sm:flex-row gap-4 justify-center mb-16">
+                    <a href="#inscription" class="gradient-green text-white px-8 py-4 rounded-full text-lg font-bold hover:opacity-90 transition shadow-lg shadow-green-500/25">
+                        <i class="fas fa-rocket mr-2"></i> Obtenir mes credits gratuits
+                    </a>
+                    <a href="#simulateur" class="glass text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white/10 transition">
+                        <i class="fas fa-calculator mr-2"></i> Simuler mes aides
+                    </a>
+                </div>
+
+                <!-- STATS -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                    <div class="glass rounded-2xl p-5">
+                        <div class="text-3xl font-black gradient-text-green counter">5,2M&euro;</div>
+                        <div class="text-sm text-gray-400 mt-1">Credits tech disponibles</div>
+                    </div>
+                    <div class="glass rounded-2xl p-5">
+                        <div class="text-3xl font-black gradient-text-green counter">200+</div>
+                        <div class="text-sm text-gray-400 mt-1">Offres partenaires</div>
+                    </div>
+                    <div class="glass rounded-2xl p-5">
+                        <div class="text-3xl font-black gradient-text-green counter">0&euro;</div>
+                        <div class="text-sm text-gray-400 mt-1">A avancer</div>
+                    </div>
+                    <div class="glass rounded-2xl p-5">
+                        <div class="text-3xl font-black gradient-text-green counter">100%</div>
+                        <div class="text-sm text-gray-400 mt-1">Finance OPCO</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3 PARCOURS -->
+    <section class="py-20 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-black mb-4">Choisissez votre parcours</h2>
+                <p class="text-gray-400 text-lg">Que vous soyez entreprise, porteur de projet ou candidat</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- PARCOURS 1 -->
+                <a href="#entreprise" class="glass rounded-3xl p-8 card-hover group cursor-pointer">
+                    <div class="w-14 h-14 rounded-2xl gradient-green flex items-center justify-center text-2xl mb-6">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">Je suis une entreprise</h3>
+                    <p class="text-gray-400 mb-6">Formation IA financee par votre OPCO. On automatise votre business avec des agents IA. Vous ne payez rien.</p>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><i class="fas fa-check text-green-400 mr-2"></i>Formation financee OPCO (3 000 a 9 000&euro;/an)</li>
+                        <li><i class="fas fa-check text-green-400 mr-2"></i>Credits tech gratuits (+1M&euro;)</li>
+                        <li><i class="fas fa-check text-green-400 mr-2"></i>Agent IA autonome pour votre business</li>
+                        <li><i class="fas fa-check text-green-400 mr-2"></i>Garantie 1er sur Google + ChatGPT</li>
+                    </ul>
+                    <div class="mt-6 text-green-400 font-semibold group-hover:translate-x-2 transition-transform">
+                        Decouvrir <i class="fas fa-arrow-right ml-1"></i>
+                    </div>
+                </a>
+
+                <!-- PARCOURS 2 -->
+                <a href="#alternance" class="glass rounded-3xl p-8 card-hover group cursor-pointer border-green-500/30">
+                    <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-green-500 text-white text-xs font-bold px-3 py-1 rounded-full hidden md:block">Populaire</div>
+                    <div class="w-14 h-14 rounded-2xl bg-blue-600 flex items-center justify-center text-2xl mb-6">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">Je suis candidat</h3>
+                    <p class="text-gray-400 mb-6">Alternance BTS Digital/IA. On finance ton diplome, tu es paye des le 1er jour, et on monte ta startup ensemble.</p>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><i class="fas fa-check text-blue-400 mr-2"></i>Diplome niveau 5 (BTS) reconnu Etat</li>
+                        <li><i class="fas fa-check text-blue-400 mr-2"></i>Salaire des 492&euro;/mois garanti</li>
+                        <li><i class="fas fa-check text-blue-400 mr-2"></i>Formation gratuite (CFA finance)</li>
+                        <li><i class="fas fa-check text-blue-400 mr-2"></i>Ton projet = ta future startup</li>
+                    </ul>
+                    <div class="mt-6 text-blue-400 font-semibold group-hover:translate-x-2 transition-transform">
+                        Postuler <i class="fas fa-arrow-right ml-1"></i>
+                    </div>
+                </a>
+
+                <!-- PARCOURS 3 -->
+                <a href="#fund" class="glass rounded-3xl p-8 card-hover group cursor-pointer">
+                    <div class="w-14 h-14 rounded-2xl bg-purple-600 flex items-center justify-center text-2xl mb-6">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">Vibe Business Fund</h3>
+                    <p class="text-gray-400 mb-6">Investissez dans un portefeuille de micro-entreprises IA autonomes. Marketplace achat/vente de business.</p>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><i class="fas fa-check text-purple-400 mr-2"></i>Startup Studio IA</li>
+                        <li><i class="fas fa-check text-purple-400 mr-2"></i>Business autonomes 24/7</li>
+                        <li><i class="fas fa-check text-purple-400 mr-2"></i>Marketplace achat/vente</li>
+                        <li><i class="fas fa-check text-purple-400 mr-2"></i>Revenus passifs IA</li>
+                    </ul>
+                    <div class="mt-6 text-purple-400 font-semibold group-hover:translate-x-2 transition-transform">
+                        En savoir plus <i class="fas fa-arrow-right ml-1"></i>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CREDITS TECH -->
+    <section id="credits" class="py-20 px-4 bg-dark-900/50">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <span class="text-green-400 font-semibold text-sm uppercase tracking-wider">Lead Magnet</span>
+                <h2 class="text-4xl font-black mt-2 mb-4">+5M&euro; de credits tech <span class="gradient-text-green">gratuits</span></h2>
+                <p class="text-gray-400 text-lg max-w-2xl mx-auto">Les memes credits que les startups de la Silicon Valley. Disponibles pour votre entreprise francaise.</p>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                <!-- Credit cards -->
+                <div class="glass rounded-2xl p-5 card-hover text-center">
+                    <div class="text-3xl mb-3"><i class="fab fa-google text-yellow-400"></i></div>
+                    <div class="font-bold">Google Cloud</div>
+                    <div class="text-2xl font-black text-green-400 mt-1">350 000$</div>
+                    <div class="text-xs text-gray-500 mt-1">Cloud & IA</div>
+                </div>
+                <div class="glass rounded-2xl p-5 card-hover text-center">
+                    <div class="text-3xl mb-3"><i class="fab fa-aws text-orange-400"></i></div>
+                    <div class="font-bold">AWS</div>
+                    <div class="text-2xl font-black text-green-400 mt-1">300 000$</div>
+                    <div class="text-xs text-gray-500 mt-1">Cloud</div>
+                </div>
+                <div class="glass rounded-2xl p-5 card-hover text-center">
+                    <div class="text-3xl mb-3"><i class="fas fa-cloud text-blue-400"></i></div>
+                    <div class="font-bold">Cloudflare</div>
+                    <div class="text-2xl font-black text-green-400 mt-1">250 000$</div>
+                    <div class="text-xs text-gray-500 mt-1">Securite & CDN</div>
+                </div>
+                <div class="glass rounded-2xl p-5 card-hover text-center">
+                    <div class="text-3xl mb-3"><i class="fab fa-microsoft text-blue-500"></i></div>
+                    <div class="font-bold">Microsoft Azure</div>
+                    <div class="text-2xl font-black text-green-400 mt-1">150 000$</div>
+                    <div class="text-xs text-gray-500 mt-1">Cloud</div>
+                </div>
+                <div class="glass rounded-2xl p-5 card-hover text-center">
+                    <div class="text-3xl mb-3"><i class="fas fa-chart-bar text-purple-400"></i></div>
+                    <div class="font-bold">Datadog</div>
+                    <div class="text-2xl font-black text-green-400 mt-1">100 000$</div>
+                    <div class="text-xs text-gray-500 mt-1">Analytics</div>
+                </div>
+                <div class="glass rounded-2xl p-5 card-hover text-center">
+                    <div class="text-3xl mb-3"><i class="fab fa-stripe text-indigo-400"></i></div>
+                    <div class="font-bold">Stripe</div>
+                    <div class="text-2xl font-black text-green-400 mt-1">50 000$</div>
+                    <div class="text-xs text-gray-500 mt-1">Paiements</div>
+                </div>
+                <div class="glass rounded-2xl p-5 card-hover text-center">
+                    <div class="text-3xl mb-3"><i class="fas fa-brain text-emerald-400"></i></div>
+                    <div class="font-bold">OpenAI</div>
+                    <div class="text-2xl font-black text-green-400 mt-1">25 000$</div>
+                    <div class="text-xs text-gray-500 mt-1">IA / GPT</div>
+                </div>
+                <div class="glass rounded-2xl p-5 card-hover text-center">
+                    <div class="text-3xl mb-3"><i class="fas fa-robot text-amber-400"></i></div>
+                    <div class="font-bold">Anthropic</div>
+                    <div class="text-2xl font-black text-green-400 mt-1">15 000$</div>
+                    <div class="text-xs text-gray-500 mt-1">IA / Claude</div>
+                </div>
+                <div class="glass rounded-2xl p-5 card-hover text-center">
+                    <div class="text-3xl mb-3"><i class="fab fa-hubspot text-orange-500"></i></div>
+                    <div class="font-bold">HubSpot</div>
+                    <div class="text-2xl font-black text-green-400 mt-1">15 000$</div>
+                    <div class="text-xs text-gray-500 mt-1">CRM & Marketing</div>
+                </div>
+                <div class="glass rounded-2xl p-5 card-hover text-center">
+                    <div class="text-3xl mb-3"><i class="fas fa-file-alt text-gray-400"></i></div>
+                    <div class="font-bold">Notion</div>
+                    <div class="text-2xl font-black text-green-400 mt-1">6 000$</div>
+                    <div class="text-xs text-gray-500 mt-1">Productivite</div>
+                </div>
+                <div class="glass rounded-2xl p-5 card-hover text-center">
+                    <div class="text-3xl mb-3"><i class="fas fa-database text-green-600"></i></div>
+                    <div class="font-bold">MongoDB</div>
+                    <div class="text-2xl font-black text-green-400 mt-1">5 000$</div>
+                    <div class="text-xs text-gray-500 mt-1">Base de donnees</div>
+                </div>
+                <div class="glass rounded-2xl p-5 card-hover text-center">
+                    <div class="text-3xl mb-3"><i class="fas fa-server text-cyan-400"></i></div>
+                    <div class="font-bold">Vercel</div>
+                    <div class="text-2xl font-black text-green-400 mt-1">3 500$</div>
+                    <div class="text-xs text-gray-500 mt-1">Hebergement</div>
+                </div>
+            </div>
+
+            <div class="text-center mt-10">
+                <a href="#inscription" class="gradient-green text-white px-8 py-4 rounded-full text-lg font-bold hover:opacity-90 transition inline-block">
+                    Debloquer tous les credits <i class="fas fa-unlock ml-2"></i>
+                </a>
+                <p class="text-gray-500 text-sm mt-3">Gratuit. Aucune carte bancaire requise.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- AIDES ETAT FRANCE -->
+    <section id="aides" class="py-20 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <span class="text-blue-400 font-semibold text-sm uppercase tracking-wider">Exclusif France</span>
+                <h2 class="text-4xl font-black mt-2 mb-4">Aides de l'Etat <span class="gradient-text-blue">jusqu'a 250 000&euro;</span></h2>
+                <p class="text-gray-400 text-lg max-w-2xl mx-auto">On vous accompagne pour obtenir toutes les aides auxquelles vous avez droit. BPI France, CIR, CII, OPCO, aides regionales.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="glass rounded-2xl p-6 card-hover">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-10 h-10 rounded-xl bg-blue-600/20 flex items-center justify-center"><i class="fas fa-flask text-blue-400"></i></div>
+                        <h3 class="font-bold text-lg">Credit Impot Recherche (CIR)</h3>
+                    </div>
+                    <div class="text-3xl font-black text-blue-400 mb-2">30%</div>
+                    <p class="text-gray-400 text-sm">De vos depenses R&D. Jusqu'a 100M&euro; de base. Si vous developpez de l'IA, vous y avez droit.</p>
+                </div>
+
+                <div class="glass rounded-2xl p-6 card-hover">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-10 h-10 rounded-xl bg-purple-600/20 flex items-center justify-center"><i class="fas fa-lightbulb text-purple-400"></i></div>
+                        <h3 class="font-bold text-lg">Credit Impot Innovation (CII)</h3>
+                    </div>
+                    <div class="text-3xl font-black text-purple-400 mb-2">20%</div>
+                    <p class="text-gray-400 text-sm">Jusqu'a 80 000&euro; de benefice fiscal. Pour les PME qui innovent. Valable jusqu'en 2027.</p>
+                </div>
+
+                <div class="glass rounded-2xl p-6 card-hover">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-10 h-10 rounded-xl bg-green-600/20 flex items-center justify-center"><i class="fas fa-university text-green-400"></i></div>
+                        <h3 class="font-bold text-lg">BPI France</h3>
+                    </div>
+                    <div class="text-3xl font-black text-green-400 mb-2">90 000&euro;</div>
+                    <p class="text-gray-400 text-sm">Bourse French Tech (30K&euro;) + Emergence (90K&euro;) + Aide Faisabilite Innovation (30K&euro;). Sans dilution.</p>
+                </div>
+
+                <div class="glass rounded-2xl p-6 card-hover">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-10 h-10 rounded-xl bg-amber-600/20 flex items-center justify-center"><i class="fas fa-book text-amber-400"></i></div>
+                        <h3 class="font-bold text-lg">OPCO Formation</h3>
+                    </div>
+                    <div class="text-3xl font-black text-amber-400 mb-2">9 000&euro;/an</div>
+                    <p class="text-gray-400 text-sm">Votre OPCO finance 100% de votre formation IA. Selon votre secteur : Atlas, AKTO, OPCO 2i, OPCO EP.</p>
+                </div>
+
+                <div class="glass rounded-2xl p-6 card-hover">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-10 h-10 rounded-xl bg-red-600/20 flex items-center justify-center"><i class="fas fa-flag text-red-400"></i></div>
+                        <h3 class="font-bold text-lg">France 2030 — Pionniers IA</h3>
+                    </div>
+                    <div class="text-3xl font-black text-red-400 mb-2">100%</div>
+                    <p class="text-gray-400 text-sm">Subvention jusqu'a 100% en phase 1. 500M&euro; consacres a l'IA. Candidatures ouvertes jusqu'en juin 2026.</p>
+                </div>
+
+                <div class="glass rounded-2xl p-6 card-hover">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-10 h-10 rounded-xl bg-cyan-600/20 flex items-center justify-center"><i class="fas fa-map-marked-alt text-cyan-400"></i></div>
+                        <h3 class="font-bold text-lg">Aides Regionales</h3>
+                    </div>
+                    <div class="text-3xl font-black text-cyan-400 mb-2">250 000&euro;</div>
+                    <p class="text-gray-400 text-sm">PM'up IDF (250K&euro;), Nouvelle-Aquitaine (50%), Centre-Val de Loire (200K&euro;). Chaque region a ses aides.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SIMULATEUR -->
+    <section id="simulateur" class="py-20 px-4 bg-dark-900/50">
+        <div class="max-w-3xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-black mb-4">Simulez vos aides en <span class="gradient-text-green">30 secondes</span></h2>
+                <p class="text-gray-400">Repondez a 3 questions et decouvrez combien vous pouvez obtenir.</p>
+            </div>
+
+            <div class="glass rounded-3xl p-8" id="simulateur-form">
+                <div class="space-y-6">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-300 mb-2">Vous etes :</label>
+                        <div class="grid grid-cols-2 gap-3">
+                            <button onclick="selectType(this, 'entreprise')" class="sim-type glass rounded-xl p-4 text-center hover:bg-green-500/10 hover:border-green-500/30 transition cursor-pointer">
+                                <i class="fas fa-building text-2xl mb-2 text-green-400"></i>
+                                <div class="font-semibold">Une entreprise</div>
+                            </button>
+                            <button onclick="selectType(this, 'candidat')" class="sim-type glass rounded-xl p-4 text-center hover:bg-blue-500/10 hover:border-blue-500/30 transition cursor-pointer">
+                                <i class="fas fa-user text-2xl mb-2 text-blue-400"></i>
+                                <div class="font-semibold">Un candidat</div>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium text-gray-300 mb-2">Nombre de salaries :</label>
+                        <select id="sim-size" class="w-full bg-dark-800 border border-white/10 rounded-xl px-4 py-3 text-white focus:border-green-500 focus:ring-1 focus:ring-green-500 outline-none">
+                            <option value="0">Je suis seul / auto-entrepreneur</option>
+                            <option value="1">1 a 10 salaries</option>
+                            <option value="11">11 a 49 salaries</option>
+                            <option value="50">50 a 249 salaries</option>
+                            <option value="250">250+ salaries</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium text-gray-300 mb-2">Votre secteur :</label>
+                        <select id="sim-sector" class="w-full bg-dark-800 border border-white/10 rounded-xl px-4 py-3 text-white focus:border-green-500 focus:ring-1 focus:ring-green-500 outline-none">
+                            <option value="tech">Tech / Digital / IA</option>
+                            <option value="commerce">Commerce / Retail</option>
+                            <option value="services">Services / Conseil</option>
+                            <option value="industrie">Industrie / Production</option>
+                            <option value="sante">Sante / Medical</option>
+                            <option value="formation">Formation / Education</option>
+                            <option value="autre">Autre</option>
+                        </select>
+                    </div>
+
+                    <button onclick="simuler()" class="w-full gradient-green text-white py-4 rounded-xl font-bold text-lg hover:opacity-90 transition">
+                        <i class="fas fa-calculator mr-2"></i> Calculer mes aides
+                    </button>
+                </div>
+
+                <!-- RESULTAT -->
+                <div id="sim-result" class="hidden mt-8 p-6 bg-green-500/10 border border-green-500/20 rounded-2xl">
+                    <h3 class="text-2xl font-black mb-4">Vous pouvez obtenir jusqu'a :</h3>
+                    <div class="text-5xl font-black gradient-text-green mb-4" id="sim-total">0&euro;</div>
+                    <div id="sim-detail" class="space-y-2 text-sm text-gray-300"></div>
+                    <a href="#inscription" class="inline-block mt-6 gradient-green text-white px-6 py-3 rounded-full font-bold hover:opacity-90 transition">
+                        Obtenir mes aides maintenant <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ENTREPRISE -->
+    <section id="entreprise" class="py-20 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <span class="text-green-400 font-semibold text-sm uppercase tracking-wider">Pour les entreprises</span>
+                    <h2 class="text-4xl font-black mt-2 mb-6">Votre transformation IA<br><span class="gradient-text-green">financee a 100%</span></h2>
+                    <p class="text-gray-400 text-lg mb-8">Votre OPCO finance votre formation IA. On met en place des agents autonomes pour votre business. Vous ne payez rien.</p>
+
+                    <div class="space-y-4 mb-8">
+                        <div class="flex gap-4 items-start">
+                            <div class="w-8 h-8 rounded-lg gradient-green flex items-center justify-center flex-shrink-0 mt-1">1</div>
+                            <div>
+                                <div class="font-bold">On identifie votre OPCO</div>
+                                <div class="text-gray-400 text-sm">Atlas, AKTO, OPCO 2i, OPCO EP... et le budget disponible (3 000 a 9 000&euro;/an)</div>
+                            </div>
+                        </div>
+                        <div class="flex gap-4 items-start">
+                            <div class="w-8 h-8 rounded-lg gradient-green flex items-center justify-center flex-shrink-0 mt-1">2</div>
+                            <div>
+                                <div class="font-bold">On monte le dossier de financement</div>
+                                <div class="text-gray-400 text-sm">100% pris en charge. Formation certifiee Qualiopi. Rien a avancer.</div>
+                            </div>
+                        </div>
+                        <div class="flex gap-4 items-start">
+                            <div class="w-8 h-8 rounded-lg gradient-green flex items-center justify-center flex-shrink-0 mt-1">3</div>
+                            <div>
+                                <div class="font-bold">On deploie vos agents IA</div>
+                                <div class="text-gray-400 text-sm">Emails automatiques, SEO, social media, support client. Votre business tourne en autonome.</div>
+                            </div>
+                        </div>
+                        <div class="flex gap-4 items-start">
+                            <div class="w-8 h-8 rounded-lg gradient-green flex items-center justify-center flex-shrink-0 mt-1">4</div>
+                            <div>
+                                <div class="font-bold">Garantie resultats</div>
+                                <div class="text-gray-400 text-sm">1er sur Google + 1er sur ChatGPT. On s'engage sur les resultats.</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="#inscription" class="gradient-green text-white px-8 py-4 rounded-full font-bold hover:opacity-90 transition inline-block">
+                        Demander un audit gratuit <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+
+                <div class="glass rounded-3xl p-8">
+                    <h3 class="font-bold text-xl mb-6 text-center">Ce que finance votre OPCO</h3>
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-center p-3 bg-white/5 rounded-xl">
+                            <span>OPCO Atlas (Finance, Conseil)</span>
+                            <span class="font-bold text-green-400">3 000&euro;/an</span>
+                        </div>
+                        <div class="flex justify-between items-center p-3 bg-white/5 rounded-xl">
+                            <span>OPCO 2i (Industrie)</span>
+                            <span class="font-bold text-green-400">3 500&euro;/an</span>
+                        </div>
+                        <div class="flex justify-between items-center p-3 bg-white/5 rounded-xl">
+                            <span>AKTO (&lt;11 salaries)</span>
+                            <span class="font-bold text-green-400">4 500&euro;/an</span>
+                        </div>
+                        <div class="flex justify-between items-center p-3 bg-white/5 rounded-xl">
+                            <span>AKTO (11-49 salaries)</span>
+                            <span class="font-bold text-green-400">9 000&euro;/an</span>
+                        </div>
+                        <div class="flex justify-between items-center p-3 bg-white/5 rounded-xl">
+                            <span>OPCO EP (&lt;11 salaries)</span>
+                            <span class="font-bold text-green-400">3 000&euro;/an</span>
+                        </div>
+                        <div class="flex justify-between items-center p-3 bg-white/5 rounded-xl">
+                            <span>OPCO EP (11-49 salaries)</span>
+                            <span class="font-bold text-green-400">6 000&euro;/an</span>
+                        </div>
+                        <div class="flex justify-between items-center p-3 bg-white/5 rounded-xl">
+                            <span>+ Co-financement FSE+</span>
+                            <span class="font-bold text-blue-400">+50%</span>
+                        </div>
+                    </div>
+                    <p class="text-xs text-gray-500 mt-4 text-center">Budget renouvelable chaque annee. Cumul possible sur 2 exercices.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ALTERNANCE -->
+    <section id="alternance" class="py-20 px-4 bg-dark-900/50">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <span class="text-blue-400 font-semibold text-sm uppercase tracking-wider">CFA Agree</span>
+                <h2 class="text-4xl font-black mt-2 mb-4">Alternance <span class="gradient-text-blue">BTS Digital & IA</span></h2>
+                <p class="text-gray-400 text-lg max-w-2xl mx-auto">Tu as une idee de business ? On te recrute en alternance, on finance ton diplome, et on monte ta startup ensemble.</p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12">
+                <!-- Pour le candidat -->
+                <div class="glass rounded-3xl p-8">
+                    <h3 class="text-2xl font-bold mb-6"><i class="fas fa-user-graduate text-blue-400 mr-3"></i>Pour le candidat</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-3 p-4 bg-blue-500/10 rounded-xl">
+                            <i class="fas fa-euro-sign text-blue-400 text-xl w-8"></i>
+                            <div>
+                                <div class="font-bold">Paye des le 1er jour</div>
+                                <div class="text-sm text-gray-400">De 492&euro; a 1 823&euro;/mois selon ton age</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-3 p-4 bg-blue-500/10 rounded-xl">
+                            <i class="fas fa-graduation-cap text-blue-400 text-xl w-8"></i>
+                            <div>
+                                <div class="font-bold">Diplome reconnu (Niveau 5 / BTS)</div>
+                                <div class="text-sm text-gray-400">Formation 100% gratuite financee par l'OPCO</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-3 p-4 bg-blue-500/10 rounded-xl">
+                            <i class="fas fa-rocket text-blue-400 text-xl w-8"></i>
+                            <div>
+                                <div class="font-bold">Ton projet = ta startup</div>
+                                <div class="text-sm text-gray-400">On utilise l'IA pour construire ton business pendant ta formation</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h4 class="font-bold mt-8 mb-4">Grille de salaires 2026</h4>
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-sm">
+                            <thead>
+                                <tr class="text-gray-400 border-b border-white/10">
+                                    <th class="text-left py-2">Age</th>
+                                    <th class="text-right py-2">1re annee</th>
+                                    <th class="text-right py-2">2e annee</th>
+                                </tr>
+                            </thead>
+                            <tbody class="text-gray-300">
+                                <tr class="border-b border-white/5">
+                                    <td class="py-2">&lt;18 ans</td>
+                                    <td class="text-right font-bold text-green-400">492&euro;</td>
+                                    <td class="text-right">711&euro;</td>
+                                </tr>
+                                <tr class="border-b border-white/5">
+                                    <td class="py-2">18-20 ans</td>
+                                    <td class="text-right font-bold text-green-400">784&euro;</td>
+                                    <td class="text-right">930&euro;</td>
+                                </tr>
+                                <tr class="border-b border-white/5">
+                                    <td class="py-2">21-25 ans</td>
+                                    <td class="text-right font-bold text-green-400">966&euro;</td>
+                                    <td class="text-right">1 112&euro;</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-2">26+ ans</td>
+                                    <td class="text-right font-bold text-green-400">1 823&euro;</td>
+                                    <td class="text-right">1 823&euro;</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <p class="text-xs text-gray-500 mt-2">Base SMIC 2026 : 1 823,03&euro; brut/mois</p>
+                </div>
+
+                <!-- Pour l'employeur -->
+                <div class="glass rounded-3xl p-8">
+                    <h3 class="text-2xl font-bold mb-6"><i class="fas fa-building text-green-400 mr-3"></i>Pour l'employeur</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-3 p-4 bg-green-500/10 rounded-xl">
+                            <i class="fas fa-gift text-green-400 text-xl w-8"></i>
+                            <div>
+                                <div class="font-bold">Aide a l'embauche : 5 000&euro;</div>
+                                <div class="text-sm text-gray-400">6 000&euro; pour un alternant en situation de handicap</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-3 p-4 bg-green-500/10 rounded-xl">
+                            <i class="fas fa-coins text-green-400 text-xl w-8"></i>
+                            <div>
+                                <div class="font-bold">Cout net derisoire</div>
+                                <div class="text-sm text-gray-400">Un alternant &lt;18 ans coute 75&euro;/mois net apres aide</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-3 p-4 bg-green-500/10 rounded-xl">
+                            <i class="fas fa-robot text-green-400 text-xl w-8"></i>
+                            <div>
+                                <div class="font-bold">L'alternant est forme a l'IA</div>
+                                <div class="text-sm text-gray-400">Il automatise vos processus des sa formation</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h4 class="font-bold mt-8 mb-4">Calcul pour l'employeur (alternant &lt;18 ans)</h4>
+                    <div class="space-y-2 text-sm">
+                        <div class="flex justify-between p-3 bg-white/5 rounded-lg">
+                            <span>Salaire annuel brut</span>
+                            <span>492&euro; x 12 = <b>5 907&euro;</b></span>
+                        </div>
+                        <div class="flex justify-between p-3 bg-green-500/10 rounded-lg">
+                            <span>Aide embauche 1re annee</span>
+                            <span class="text-green-400 font-bold">- 5 000&euro;</span>
+                        </div>
+                        <div class="flex justify-between p-3 bg-white/5 rounded-lg">
+                            <span>Charges sociales</span>
+                            <span>Exonerees (apprenti)</span>
+                        </div>
+                        <div class="flex justify-between p-3 bg-white/5 rounded-lg">
+                            <span>Formation</span>
+                            <span>0&euro; (OPCO)</span>
+                        </div>
+                        <div class="flex justify-between p-3 bg-green-500/20 rounded-lg border border-green-500/30">
+                            <span class="font-bold">Cout net annuel</span>
+                            <span class="font-black text-green-400">907&euro;/an soit 75&euro;/mois</span>
+                        </div>
+                    </div>
+
+                    <a href="#inscription" class="block mt-6 text-center gradient-green text-white py-3 rounded-xl font-bold hover:opacity-90 transition">
+                        Recruter un alternant IA <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- VIBE BUSINESS FUND -->
+    <section id="fund" class="py-20 px-4">
+        <div class="max-w-5xl mx-auto text-center">
+            <span class="text-purple-400 font-semibold text-sm uppercase tracking-wider">Vision</span>
+            <h2 class="text-4xl md:text-5xl font-black mt-2 mb-6">Vibe Business <span class="gradient-text-blue">Fund</span></h2>
+            <p class="text-gray-400 text-xl max-w-3xl mx-auto mb-12">Un Startup Studio IA qui cree, fait tourner et monetise des micro-entreprises autonomes. Comme Polsia, mais en France, avec les aides de l'Etat.</p>
+
+            <div class="grid md:grid-cols-3 gap-8 mb-12">
+                <div class="glass rounded-2xl p-6">
+                    <div class="text-4xl mb-4"><i class="fas fa-cogs text-purple-400"></i></div>
+                    <h3 class="font-bold text-lg mb-2">On cree le business</h3>
+                    <p class="text-gray-400 text-sm">L'IA genere le site, le contenu, les campagnes. Un business complet en 24h.</p>
+                </div>
+                <div class="glass rounded-2xl p-6">
+                    <div class="text-4xl mb-4"><i class="fas fa-robot text-purple-400"></i></div>
+                    <h3 class="font-bold text-lg mb-2">L'IA le fait tourner</h3>
+                    <p class="text-gray-400 text-sm">Agents autonomes 24/7. SEO, emails, social media, support. Zero intervention humaine.</p>
+                </div>
+                <div class="glass rounded-2xl p-6">
+                    <div class="text-4xl mb-4"><i class="fas fa-hand-holding-usd text-purple-400"></i></div>
+                    <h3 class="font-bold text-lg mb-2">Vous investissez</h3>
+                    <p class="text-gray-400 text-sm">Marketplace de business autonomes. Achetez, vendez, investissez dans des entreprises IA.</p>
+                </div>
+            </div>
+
+            <div class="glass rounded-3xl p-8 max-w-2xl mx-auto">
+                <div class="text-sm text-gray-400 mb-2">Prochainement</div>
+                <h3 class="text-2xl font-bold mb-4">Rejoignez la liste d'attente</h3>
+                <p class="text-gray-400 mb-6">Soyez les premiers informes quand le Vibe Business Fund sera lance.</p>
+                <a href="#inscription" class="bg-purple-600 hover:bg-purple-700 text-white px-8 py-3 rounded-full font-bold transition inline-block">
+                    M'inscrire a la liste d'attente <i class="fas fa-bell ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section class="py-16 px-4 bg-dark-900/50">
+        <div class="max-w-5xl mx-auto text-center">
+            <h3 class="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-8">Certifications & Partenaires</h3>
+            <div class="flex flex-wrap justify-center items-center gap-8 text-gray-400">
+                <div class="flex items-center gap-2"><i class="fas fa-certificate text-green-400"></i> <span class="font-bold">Qualiopi</span></div>
+                <div class="flex items-center gap-2"><i class="fas fa-university text-blue-400"></i> <span class="font-bold">CFA Agree</span></div>
+                <div class="flex items-center gap-2"><i class="fas fa-landmark text-amber-400"></i> <span class="font-bold">BPI France</span></div>
+                <div class="flex items-center gap-2"><i class="fas fa-flag text-red-400"></i> <span class="font-bold">France 2030</span></div>
+                <div class="flex items-center gap-2"><i class="fas fa-euro-sign text-purple-400"></i> <span class="font-bold">OPCO</span></div>
+                <div class="flex items-center gap-2"><i class="fas fa-globe text-cyan-400"></i> <span class="font-bold">FSE+</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INSCRIPTION -->
+    <section id="inscription" class="py-20 px-4">
+        <div class="max-w-xl mx-auto">
+            <div class="glass rounded-3xl p-8 md:p-10">
+                <div class="text-center mb-8">
+                    <h2 class="text-3xl font-black mb-3">Obtenez vos credits <span class="gradient-text-green">gratuits</span></h2>
+                    <p class="text-gray-400">Inscrivez-vous et accedez a +5M&euro; de credits tech + aides Etat. C'est 100% gratuit.</p>
+                </div>
+
+                <form id="lead-form" onsubmit="handleSubmit(event)" class="space-y-4">
+                    <div>
+                        <input type="text" name="prenom" placeholder="Votre prenom" required
+                            class="w-full bg-dark-800 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-gray-500 focus:border-green-500 focus:ring-1 focus:ring-green-500 outline-none">
+                    </div>
+                    <div>
+                        <input type="email" name="email" placeholder="Votre email professionnel" required
+                            class="w-full bg-dark-800 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-gray-500 focus:border-green-500 focus:ring-1 focus:ring-green-500 outline-none">
+                    </div>
+                    <div>
+                        <input type="tel" name="telephone" placeholder="Votre telephone (optionnel)"
+                            class="w-full bg-dark-800 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-gray-500 focus:border-green-500 focus:ring-1 focus:ring-green-500 outline-none">
+                    </div>
+                    <div>
+                        <select name="parcours" required
+                            class="w-full bg-dark-800 border border-white/10 rounded-xl px-4 py-3 text-white focus:border-green-500 focus:ring-1 focus:ring-green-500 outline-none">
+                            <option value="">Je suis interesse par...</option>
+                            <option value="credits">Les credits tech gratuits</option>
+                            <option value="entreprise">Formation IA pour mon entreprise (OPCO)</option>
+                            <option value="alternance">L'alternance BTS Digital/IA</option>
+                            <option value="fund">Le Vibe Business Fund</option>
+                            <option value="tout">Tout m'interesse !</option>
+                        </select>
+                    </div>
+                    <div>
+                        <input type="text" name="entreprise" placeholder="Nom de votre entreprise / projet"
+                            class="w-full bg-dark-800 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-gray-500 focus:border-green-500 focus:ring-1 focus:ring-green-500 outline-none">
+                    </div>
+
+                    <button type="submit" class="w-full gradient-green text-white py-4 rounded-xl font-bold text-lg hover:opacity-90 transition shadow-lg shadow-green-500/25">
+                        <i class="fas fa-unlock mr-2"></i> Acceder gratuitement
+                    </button>
+
+                    <p class="text-xs text-gray-500 text-center">Gratuit et sans engagement. Vos donnees sont protegees (RGPD).</p>
+                </form>
+
+                <div id="form-success" class="hidden text-center py-8">
+                    <div class="text-5xl mb-4"><i class="fas fa-check-circle text-green-400"></i></div>
+                    <h3 class="text-2xl font-bold mb-2">Bienvenue !</h3>
+                    <p class="text-gray-400">Verifiez votre email. On vous contacte sous 24h pour debloquer vos credits.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="py-20 px-4 bg-dark-900/50">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="text-3xl font-black text-center mb-12">Questions frequentes</h2>
+            <div class="space-y-4">
+                <details class="glass rounded-2xl p-5 group cursor-pointer">
+                    <summary class="flex justify-between items-center font-bold">
+                        C'est vraiment gratuit ?
+                        <i class="fas fa-chevron-down text-gray-400 group-open:rotate-180 transition-transform"></i>
+                    </summary>
+                    <p class="text-gray-400 mt-3">Oui. Les credits tech sont offerts par les entreprises partenaires (Google, AWS, etc.). Les formations sont financees par votre OPCO ou le CFA. Vous n'avancez rien.</p>
+                </details>
+                <details class="glass rounded-2xl p-5 group cursor-pointer">
+                    <summary class="flex justify-between items-center font-bold">
+                        Qu'est-ce qu'un OPCO ?
+                        <i class="fas fa-chevron-down text-gray-400 group-open:rotate-180 transition-transform"></i>
+                    </summary>
+                    <p class="text-gray-400 mt-3">Un OPCO (Operateur de Competences) est un organisme qui finance la formation professionnelle des entreprises. Chaque entreprise cotise et a un budget formation annuel (3 000 a 9 000 euros/an) qu'elle perd si elle ne l'utilise pas avant le 31 decembre.</p>
+                </details>
+                <details class="glass rounded-2xl p-5 group cursor-pointer">
+                    <summary class="flex justify-between items-center font-bold">
+                        Comment fonctionne l'alternance ?
+                        <i class="fas fa-chevron-down text-gray-400 group-open:rotate-180 transition-transform"></i>
+                    </summary>
+                    <p class="text-gray-400 mt-3">L'alternant est recrute en contrat d'apprentissage. Il alterne entre formation (dans notre CFA) et entreprise. Le salaire est pris en charge partiellement (27 a 100% du SMIC selon l'age), la formation est 100% financee par l'OPCO, et l'employeur recoit une aide de 5 000 euros.</p>
+                </details>
+                <details class="glass rounded-2xl p-5 group cursor-pointer">
+                    <summary class="flex justify-between items-center font-bold">
+                        C'est quoi le Vibe Business ?
+                        <i class="fas fa-chevron-down text-gray-400 group-open:rotate-180 transition-transform"></i>
+                    </summary>
+                    <p class="text-gray-400 mt-3">Le Vibe Business, c'est creer et faire tourner un business entier grace a l'IA. Des agents autonomes gerent le marketing, le SEO, les emails, le support client — 24h/24, 7j/7. Vous donnez la direction, l'IA execute.</p>
+                </details>
+                <details class="glass rounded-2xl p-5 group cursor-pointer">
+                    <summary class="flex justify-between items-center font-bold">
+                        Qui peut en beneficier ?
+                        <i class="fas fa-chevron-down text-gray-400 group-open:rotate-180 transition-transform"></i>
+                    </summary>
+                    <p class="text-gray-400 mt-3">Toute entreprise francaise (TPE, PME, ETI) pour les formations OPCO et les aides Etat. Tout candidat de 16 a 29 ans (sans limite d'age pour les travailleurs handicapes) pour l'alternance. Et tout entrepreneur pour les credits tech.</p>
+                </details>
+                <details class="glass rounded-2xl p-5 group cursor-pointer">
+                    <summary class="flex justify-between items-center font-bold">
+                        Etes-vous certifies ?
+                        <i class="fas fa-chevron-down text-gray-400 group-open:rotate-180 transition-transform"></i>
+                    </summary>
+                    <p class="text-gray-400 mt-3">Oui. Nous sommes un centre de formation certifie Qualiopi (obligatoire pour le financement OPCO et CPF) et un CFA agree pour les contrats d'apprentissage.</p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-12 px-4 border-t border-white/5">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="font-black text-xl mb-4">ken<span class="text-green-400">rak</span></div>
+                    <p class="text-gray-500 text-sm">Vibe Business France. Lance ton business IA sans avancer 1 euro.</p>
+                    <p class="text-gray-500 text-sm mt-2">Centre de formation certifie Qualiopi<br>CFA agree</p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-sm uppercase tracking-wider text-gray-400 mb-4">Parcours</h4>
+                    <ul class="space-y-2 text-sm text-gray-500">
+                        <li><a href="#credits" class="hover:text-white transition">Credits Tech</a></li>
+                        <li><a href="#aides" class="hover:text-white transition">Aides Etat</a></li>
+                        <li><a href="#entreprise" class="hover:text-white transition">Entreprises</a></li>
+                        <li><a href="#alternance" class="hover:text-white transition">Alternance</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-sm uppercase tracking-wider text-gray-400 mb-4">Aides</h4>
+                    <ul class="space-y-2 text-sm text-gray-500">
+                        <li><a href="#aides" class="hover:text-white transition">CIR / CII</a></li>
+                        <li><a href="#aides" class="hover:text-white transition">BPI France</a></li>
+                        <li><a href="#aides" class="hover:text-white transition">OPCO</a></li>
+                        <li><a href="#aides" class="hover:text-white transition">France 2030</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-sm uppercase tracking-wider text-gray-400 mb-4">Contact</h4>
+                    <ul class="space-y-2 text-sm text-gray-500">
+                        <li><i class="fas fa-envelope mr-2"></i>contact@kenrak.com</li>
+                        <li><i class="fas fa-globe mr-2"></i>kenrak.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-600">
+                <p>&copy; 2026 Kenrak — Vibe Business France. Tous droits reserves.</p>
+                <div class="flex gap-4 mt-2 md:mt-0">
+                    <a href="#" class="hover:text-white transition">Mentions legales</a>
+                    <a href="#" class="hover:text-white transition">Politique de confidentialite</a>
+                    <a href="#" class="hover:text-white transition">CGU</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script>
+    let selectedType = '';
+
+    function selectType(el, type) {
+        document.querySelectorAll('.sim-type').forEach(b => b.classList.remove('border-green-500', 'bg-green-500/10', 'border-blue-500', 'bg-blue-500/10'));
+        selectedType = type;
+        if(type === 'entreprise') {
+            el.classList.add('border-green-500', 'bg-green-500/10');
+        } else {
+            el.classList.add('border-blue-500', 'bg-blue-500/10');
+        }
+    }
+
+    function simuler() {
+        const size = parseInt(document.getElementById('sim-size').value);
+        const sector = document.getElementById('sim-sector').value;
+        let total = 0;
+        let details = [];
+
+        if(selectedType === 'candidat') {
+            details.push('<i class="fas fa-check text-blue-400 mr-2"></i>Formation 100% financee par le CFA');
+            details.push('<i class="fas fa-check text-blue-400 mr-2"></i>Salaire : 492 a 1 823 euros/mois selon age');
+            details.push('<i class="fas fa-check text-blue-400 mr-2"></i>Diplome BTS niveau 5 reconnu Etat');
+            total = 5907;
+            document.getElementById('sim-total').innerHTML = 'Salaire annuel garanti : ' + total.toLocaleString('fr-FR') + '&euro;+';
+        } else {
+            // OPCO
+            let opco = 3000;
+            if(size >= 11 && size < 50) opco = 6000;
+            if(size >= 0 && size < 11) opco = 4500;
+            details.push('<i class="fas fa-check text-green-400 mr-2"></i>Budget OPCO formation : ' + opco.toLocaleString('fr-FR') + ' euros/an');
+            total += opco;
+
+            // Credits tech
+            total += 50000;
+            details.push('<i class="fas fa-check text-green-400 mr-2"></i>Credits tech (cloud, IA, outils) : 50 000+ euros');
+
+            // CII si PME
+            if(size < 250) {
+                total += 80000;
+                details.push('<i class="fas fa-check text-green-400 mr-2"></i>Credit Impot Innovation (CII) : jusqu\'a 80 000 euros');
+            }
+
+            // France Num
+            if(size < 250) {
+                total += 50000;
+                details.push('<i class="fas fa-check text-green-400 mr-2"></i>Pret France Num (BPI) : jusqu\'a 50 000 euros');
+            }
+
+            // Aide alternant
+            total += 5000;
+            details.push('<i class="fas fa-check text-green-400 mr-2"></i>Aide recrutement alternant : 5 000 euros');
+
+            // FSE+
+            details.push('<i class="fas fa-check text-green-400 mr-2"></i>Co-financement FSE+ : +50% des couts formation');
+
+            document.getElementById('sim-total').innerHTML = total.toLocaleString('fr-FR') + '&euro;+';
+        }
+
+        document.getElementById('sim-detail').innerHTML = details.map(d => '<div>' + d + '</div>').join('');
+        document.getElementById('sim-result').classList.remove('hidden');
+        document.getElementById('sim-result').scrollIntoView({behavior: 'smooth', block: 'center'});
+    }
+
+    function handleSubmit(e) {
+        e.preventDefault();
+        const form = e.target;
+        const data = new FormData(form);
+
+        // Track conversion
+        if(typeof dataLayer !== 'undefined') {
+            dataLayer.push({'event': 'lead_form_submit', 'parcours': data.get('parcours')});
+        }
+
+        // Show success
+        document.getElementById('lead-form').classList.add('hidden');
+        document.getElementById('form-success').classList.remove('hidden');
+    }
+    </script>
+</body>
+</html>
