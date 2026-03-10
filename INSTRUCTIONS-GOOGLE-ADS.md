@@ -8,16 +8,18 @@
 ## Statut des Campagnes
 | Campagne | ID | Budget | Statut |
 |----------|-----|--------|--------|
-| C1 - Formation IA Entreprise OPCO | 23643023932 | $120/jour | PUBLIEE ✅ (SOP a appliquer) |
-| C2 - Alternance IA Formation Jeunes | 23638468049 | $80/jour | PUBLIEE ✅ (SOP a appliquer) |
+| C1 - Formation IA Entreprise OPCO | 23643023932 | $120/jour | PUBLIEE ✅ - CSV SOP pret (google-ads-import-C1-C2-SOP.csv) |
+| C2 - Alternance IA Formation Jeunes | 23638468049 | $80/jour | PUBLIEE ✅ - CSV SOP pret (google-ads-import-C1-C2-SOP.csv) |
 | C3 - Credits Tech Startup | - | $80/jour | CSV pret (google-ads-import-C3-C4-C5-SOP.csv) |
 | C4 - DSA Dynamic Search | - | $49/jour | CSV pret (google-ads-import-C3-C4-C5-SOP.csv) |
 | C5 - Vibe Business Fund | - | $49/jour | CSV pret (google-ads-import-C3-C4-C5-SOP.csv) |
 
 ## Fichiers CSV d'import
+- **`google-ads-import-C1-C2-SOP.csv`** : Mise a jour SOP pour C1, C2 deja publiees (132 lignes, 120 keywords, 12 ads, 0 warnings)
 - **`google-ads-import-C3-C4-C5-SOP.csv`** : Campagnes 3, 4, 5 avec toutes les regles SOP appliquees (123 lignes, 0 warnings)
 - **`google-ads-extensions.csv`** : Extensions pour toutes les campagnes (sitelinks, callouts, snippets, call)
-- **`generate-csv.py`** : Script Python pour regenerer le CSV si modifications necessaires
+- **`generate-csv.py`** : Script Python pour regenerer le CSV C3-C5
+- **`generate-csv-C1-C2-SOP.py`** : Script Python pour regenerer le CSV C1-C2
 
 ## REGLES SOP OBLIGATOIRES (a appliquer a TOUTES les campagnes)
 
