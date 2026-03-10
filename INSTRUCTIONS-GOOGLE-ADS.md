@@ -22,6 +22,20 @@
 - **`generate-csv.py`** : Script Python pour regenerer le CSV C3-C5
 - **`generate-csv-C1-C2-SOP.py`** : Script Python pour regenerer le CSV C1-C2
 
+### Blog (PUBLIE sur kenrak.com) ✅
+- **`blog/index.html`** : Page listing avec 5 cartes articles + CTA
+- **`blog/credits-tech-gratuits-startup-2026.html`** : Guide complet credits tech (18 KB, 10 min)
+- **`blog/aides-etat-startup-ia-france-2026.html`** : Guide aides Etat IA (27 KB, 12 min)
+- **`blog/formation-ia-financee-opco-2026.html`** : Guide formation OPCO (18 KB, 8 min)
+- **`blog/alternance-intelligence-artificielle-2026.html`** : Guide alternance IA (28 KB, 13 min)
+- **`blog/vibe-business-france-2026.html`** : Guide Vibe Business (30 KB, 14 min)
+
+### Fichiers techniques SEO (DEPLOYES) ✅
+- **`robots.txt`** : Allow all, disallow .wrangler/.git
+- **`sitemap.xml`** : 6 URLs (homepage + 5 articles blog)
+- **`_headers`** : Cloudflare Pages security headers (X-Frame-Options, CSP, etc.)
+- **`404.html`** : Page erreur personnalisee
+
 ### Contenu SEO et Marketing
 - **`seo-content/reddit-posts.md`** : 5 posts Reddit pour r/france, r/startups, r/artificial, r/smallbusiness
 - **`seo-content/linkedin-posts.md`** : 5 posts LinkedIn (credits tech, OPCO, alternance, Vibe Business, agents IA)
@@ -529,11 +543,11 @@ RSA Ad :
 4. Executer `updateKenrakSheet()`
 5. Autoriser l'acces quand demande
 
-### 6. Publier contenu SEO (MOYENNE)
+### 6. Publier contenu SEO sur reseaux sociaux (MOYENNE)
 1. Publier les posts Reddit (voir `seo-content/reddit-posts.md`)
 2. Publier les posts LinkedIn (voir `seo-content/linkedin-posts.md`)
 3. Publier les tweets/threads X (voir `seo-content/x-twitter-posts.md`)
-4. Creer les articles de blog (voir `seo-content/blog-articles.md`)
+4. ~~Creer les articles de blog~~ ✅ FAIT — 5 articles publies sur kenrak.com/blog/
 
 ### 7. Lancer les sequences emailing (BASSE)
 1. Choisir un outil : Brevo, HubSpot, ou Make.com
@@ -547,3 +561,21 @@ RSA Ad :
 - **URL** : https://github.com/franckparienti/kenrak.com
 - **Branche** : main
 - **Deploiement** : Cloudflare Pages (kenrak.com)
+- **Dernier push** : 10 mars 2026
+
+## Resume des taches automatisees completees ✅
+| Tache | Statut |
+|-------|--------|
+| Site kenrak.com deploye sur Cloudflare Pages | ✅ |
+| C1 publiee (ID 23643023932, $120/jour) | ✅ |
+| C2 publiee (ID 23638468049, $80/jour) | ✅ |
+| CSVs SOP C1-C5 generes | ✅ |
+| CSV extensions genere | ✅ |
+| Contenu SEO redige (Reddit, LinkedIn, X, Blog, Emailing) | ✅ |
+| 5 articles blog HTML publies sur kenrak.com/blog/ | ✅ |
+| Fichiers techniques SEO (robots.txt, sitemap.xml, _headers, 404.html) | ✅ |
+| JSON-LD EducationalOrganization + Article schema | ✅ |
+| GTM GTM-PD6BHBZD integre sur toutes les pages | ✅ |
+| Google Apps Script prepare (google-apps-script-update-sheet.js) | ✅ |
+| Configuration GTM preparee (gtm-conversion-tag.json) | ✅ |
+| Tout pousse sur GitHub (main) | ✅ |
