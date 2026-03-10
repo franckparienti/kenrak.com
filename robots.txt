@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /.wrangler/
+Disallow: /.git/
+
+Sitemap: https://kenrak.com/sitemap.xml
